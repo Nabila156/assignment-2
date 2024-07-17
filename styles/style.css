@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@font-face{
+    font-family: 'Miama';
+    src: url('../fonts/Miama.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+.inter-font {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "slnt" 0;
+}
+
+body{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+    background-color: black;
+}
+
+
+/* shared style */
+
+.flex{
+    display: flex;
+}
+
+.btn-primary{
+    border-radius: 42px;
+    border: none;
+    background: rgb(230, 83, 60);
+    max-width: 224px;
+    color: rgb(255, 255, 255);
+    padding: 15px 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+/* header */
+
+.fitness{
+    font-size: 36px;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: oblique;
+}
+
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav{
+    list-style: none;
+    gap: 50px;
+}
+
+.item{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+#home{
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 46px;
+    background: rgb(230, 83, 60);
+}
+
+.banner-header{
+    gap: 170px;
+}
+
+.banner{
+    max-width: 500px;
+    width: 100%;
+}
+.banner h1{
+    font-size: 4.9rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+}
+#shape{
+    font-family: 'Miama',cursive;
+    font-size: 10rem;
+    font-weight: 500;
+    line-height: 0.09;
+}
+
+.banner p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-bottom: 30px;
+}
+
+.btn{
+    gap: 40px;
+}
+
+.btn-download{
+    font-size: 1.1rem;
+    font-weight: 600;
+    background-color: black;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 42px;
+    max-width: 224px;
+    padding: 15px 30px;
+    cursor: pointer;
+}
