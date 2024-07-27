@@ -62,7 +62,7 @@ body{
 /* header */
 
 .header{
-    background-color: rgba(119, 119, 119, 0.2);
+    background: linear-gradient(rgba(119, 119, 119, 0.3), rgba(17, 17, 17, 0.1));
     padding: 50px 150px;
 }
 
@@ -132,7 +132,6 @@ body{
     margin-top: 50px;
     position: relative;
 }
-
 .btn{
     gap: 40px;
 }
@@ -208,20 +207,56 @@ body{
 
 /* change your habits */
 
-.habits img{
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+.change-your-habits{
+    text-align: center;
+    padding: 50px 150px;
+    margin-top: 50px;
+}
+.change-your-habits > h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.change-your-habits > p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
 }
 
+.habits{
+    justify-content: space-between;
+    margin-top: 90px;
+}
+.habits img{
+    max-width: 180px;
+    width: 100%;
+    border-radius: 50%;
+}
+.habits h6{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.habits p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 10px;
+    max-width: 220px;
+    width: 100%;
+}
 
 
 
 /* Responsive Media Query */
 
 @media screen and (max-width:576px) {
-
-    .header{
+    /* header */
+    .header,
+    .change-your-habits
+    {
         padding: 20px;
     }
     .nav,
@@ -234,7 +269,9 @@ body{
     {
         display: block;
     }
-    .banner-header{
+    .banner-header,
+    .habits
+    {
         flex-direction: column;
     }
     .banner-header{
@@ -277,5 +314,23 @@ body{
         max-width: 145px;
         right: 20px;
         top: 60px;
+    }
+
+    /* change your habits */
+
+    .change-your-habits{
+       margin-top: 0;
+    }
+    .change-your-habits h1{
+        font-size: 2rem;
+    }
+    .change-your-habits > p{
+        line-height: 24px;
+    }
+    .habits{
+        gap: 50px;
+    }
+    .habits p{
+        max-width: none; 
     }
 }
