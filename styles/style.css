@@ -33,7 +33,9 @@ body{
     display: none;
 }
 
-#mobile-join{
+#mobile-join,
+#run1
+{
     display: none;
 }
 
@@ -45,7 +47,8 @@ body{
 }
 
 .btn-primary,
-#mobile-join
+#mobile-join,
+.run button
 {
     border-radius: 42px;
     border: none;
@@ -210,7 +213,6 @@ body{
 .change-your-habits{
     text-align: center;
     padding: 50px 150px;
-    margin-top: 50px;
 }
 .change-your-habits > h1{
     color: rgb(255, 255, 255);
@@ -248,6 +250,40 @@ body{
     width: 100%;
 }
 
+/* run-extra-mile */
+
+.run-extra-mile{
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    margin: 50px 150px;
+}
+.run-extra-mile img{
+    border-radius: 18px;
+}
+.run-image{
+    padding: 30px;
+}
+.run{
+    padding: 30px 50px;
+}
+.run h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+}
+.run p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    line-height: 20px;
+}
+.run button{
+    margin-top: 40px;
+}
+
+
+
 
 
 /* Responsive Media Query */
@@ -260,17 +296,20 @@ body{
         padding: 20px;
     }
     .nav,
-    .btn-primary
+    .btn-primary,
+    #run-man
     {
         display: none ;
      } 
     .fa-bars,
-    #mobile-join
+    #mobile-join,
+    #run1
     {
         display: block;
     }
     .banner-header,
-    .habits
+    .habits,
+    .run-extra-mile
     {
         flex-direction: column;
     }
@@ -318,9 +357,6 @@ body{
 
     /* change your habits */
 
-    .change-your-habits{
-       margin-top: 0;
-    }
     .change-your-habits h1{
         font-size: 2rem;
     }
@@ -332,5 +368,20 @@ body{
     }
     .habits p{
         max-width: none; 
+    }
+
+    /* run an extra mile */
+   
+    .run-extra-mile{
+        margin: 20px;
+    }
+    .run h1{
+        font-size: 2rem;
+    }
+    .run button{
+        max-width: none;
+    }
+    .run-image{
+        padding-left: 35px;
     }
 }
