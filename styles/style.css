@@ -48,7 +48,8 @@ body{
 
 .btn-primary,
 #mobile-join,
-.run button
+.run button,
+#calculate
 {
     border-radius: 42px;
     border: none;
@@ -261,7 +262,7 @@ body{
     border-radius: 18px;
 }
 .run-image{
-    padding: 30px;
+    padding: 34px;
 }
 .run{
     padding: 30px 50px;
@@ -282,6 +283,89 @@ body{
     margin-top: 40px;
 }
 
+   /* BMI Calculator */
+   
+   .bmi{
+    margin: 0 auto;
+    padding-top: 50px;
+    max-width: 630px;
+   }
+   .bmi h4{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+   }
+   .bmi p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 15px;
+    line-height: 24px;
+   }
+   .bmi-calculation{
+    justify-content: space-between;
+    padding: 50px 150px;
+    background: rgb(34, 34, 34);
+    margin-top: 90px;
+   }
+   .chart h6, .calculator h6{
+    color: rgb(255, 255, 255);
+    font-size: 1.8rem;
+    font-weight: 900;
+   }
+   .chart table{
+    border-collapse: collapse;
+    margin-top: 50px;
+    text-align: left;
+    width: 100%;
+   }
+   .chart th,td{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 12px;
+   }
+   .chart th{
+    font-size: 1rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+   }
+   .chart td{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+   }
+   .calculator > div{
+    margin-top: 30px;
+   }
+   .calculator p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    line-height: 24px;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+   }
+   .calculator input, select{
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.3);
+    margin-top: 12px;
+   }
+   .calculator .flex{
+    gap: 12px;
+   }
+   #calculate{
+    margin-top: 35px;
+   }
+  
+
+
+
+
 
 
 
@@ -291,7 +375,8 @@ body{
 @media screen and (max-width:576px) {
     /* header */
     .header,
-    .change-your-habits
+    .change-your-habits,
+    .bmi-calculation
     {
         padding: 20px;
     }
@@ -309,7 +394,8 @@ body{
     }
     .banner-header,
     .habits,
-    .run-extra-mile
+    .run-extra-mile,
+    .bmi-calculation
     {
         flex-direction: column;
     }
@@ -372,7 +458,9 @@ body{
 
     /* run an extra mile */
    
-    .run-extra-mile{
+    .run-extra-mile,
+    .bmi
+    {
         margin: 20px;
     }
     .run h1{
@@ -381,7 +469,25 @@ body{
     .run button{
         max-width: none;
     }
-    .run-image{
-        padding-left: 35px;
+
+    /* BMI Calculator */
+
+    .bmi{
+        max-width: none;
+    }
+    .bmi h4{
+        font-size: 2rem;
+    }
+    .bmi-calculation{
+        margin-top: 40px;
+    }
+    .chart h6, .calculator h6{
+        font-size: 1rem;
+    }
+    .chart table{
+        margin-top: 25px;
+    }
+    .calculator h6{
+        margin-top: 42px;
     }
 }
