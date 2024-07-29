@@ -66,7 +66,7 @@ body{
 /* header */
 
 .header{
-    background: linear-gradient(rgba(119, 119, 119, 0.3), rgba(17, 17, 17, 0.1));
+    background: linear-gradient(rgba(119, 119, 119, 0.2), rgba(119, 119, 119, 0.3), rgba(17, 17, 17, 0.1) 100%);
     padding: 50px 150px;
 }
 
@@ -354,6 +354,7 @@ body{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.3);
     margin-top: 12px;
+    cursor: pointer;
    }
    .calculator .flex{
     gap: 12px;
@@ -361,12 +362,70 @@ body{
    #calculate{
     margin-top: 35px;
    }
-  
+   .gender, .factor{
+    color: black;
+   }
 
 
+   /* Meet our team */
 
-
-
+   .trainer-team{
+    margin: 50px 150px;
+   }
+   .team{
+    margin-top: 90px;
+    text-align: center;
+   }
+   .team h4{
+    font-size: 3rem;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+   }
+   .team p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 15px;
+   }
+   .trainer{
+    margin-top: 60px;
+    padding: 20px;
+    border-radius: 18px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+   }
+   .trainer img{
+    border-radius: 18px;
+    border: none;
+    max-width: 350px;
+    width: 100%;
+    max-height: 270px;
+    height: 100%;
+    filter: brightness(0.8);
+   }
+   .trainer h6{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: white;
+   }
+   .trainer p{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.6);
+    margin-top: 5px;
+   }
+   .trainer div{
+     position: relative;
+   }
+   .trainer > div > div{
+    position: absolute;
+    left: 20px;
+    bottom: 30px;
+   }
+ 
 
 
 
@@ -459,7 +518,8 @@ body{
     /* run an extra mile */
    
     .run-extra-mile,
-    .bmi
+    .bmi,
+    .trainer-team
     {
         margin: 20px;
     }
@@ -489,5 +549,14 @@ body{
     }
     .calculator h6{
         margin-top: 42px;
+    }
+
+    /* Meet our team */
+
+    .team h4{
+        font-size: 2rem;
+    }
+    .trainer{
+        grid-template-columns: 1fr;
     }
 }
