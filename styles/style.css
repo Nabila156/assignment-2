@@ -425,6 +425,57 @@ body{
     left: 20px;
     bottom: 30px;
    }
+
+   /* footer */
+
+   footer{
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 50px 150px;
+    margin-top: 90px;
+   }
+   .fitness-footer{
+    justify-content: space-between;
+   }
+   .fitness-big{
+    max-width: 450px;
+   }
+   .fitness1{
+    font-size: 4.4rem;
+    font-weight: 800;
+    color: rgb(230, 83, 60);
+    font-style: oblique;
+   }
+   .fitness-description{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: 20px;
+    line-height: 20px;
+   }
+   .get-started{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+   }
+   .get-started-items, .get-started-items2{
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 40px;
+    line-height: 40px;
+    cursor: pointer;
+   }
+   .horizontal-line{
+    margin-top: 80px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+   }
+   .right{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1.25rem;
+    font-weight: 400;
+    margin-top: 36px;
+    text-align: center;
+   }
  
 
 
@@ -435,7 +486,8 @@ body{
     /* header */
     .header,
     .change-your-habits,
-    .bmi-calculation
+    .bmi-calculation,
+    footer
     {
         padding: 20px;
     }
@@ -454,7 +506,8 @@ body{
     .banner-header,
     .habits,
     .run-extra-mile,
-    .bmi-calculation
+    .bmi-calculation,
+    .fitness-footer
     {
         flex-direction: column;
     }
@@ -558,5 +611,11 @@ body{
     }
     .trainer{
         grid-template-columns: 1fr;
+    }
+
+    /* footer */
+ 
+    .get-started{
+        margin-top: 30px;
     }
 }
