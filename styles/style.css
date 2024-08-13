@@ -1,18 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+.inter-font {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings:
+      "slnt" 0;
+  }
+
 @font-face{
     font-family: 'Miama';
     src: url('../fonts/Miama.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
-.inter-font {
-  font-family: "Inter", sans-serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  font-variation-settings:
-    "slnt" 0;
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Permanent+Marker&display=swap');
+.dancing-script-font {
+    font-family: "Dancing Script", cursive;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+
+
+  
 *{
     margin: 0;
     padding: 0;
@@ -131,6 +144,7 @@ body{
     font-weight: 400;
     color: rgba(255, 255, 255, 0.5);
     margin-bottom: 40px;
+    line-height: 24px;
 }
 .banner-image{
     margin-top: 50px;
@@ -287,7 +301,6 @@ body{
    
    .bmi{
     margin: 0 auto;
-    padding-top: 50px;
     max-width: 630px;
    }
    .bmi h4{
@@ -476,7 +489,111 @@ body{
     margin-top: 36px;
     text-align: center;
    }
- 
+
+   /* revitalize with regular exercise  */
+    .revitalize{
+        margin: 150px;
+    }
+   .revitalize h1{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    font-weight: 900;
+   }
+   .instruction{
+    font-size: 1rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    line-height: 24px;
+    margin-top: 20px;
+    margin-right: 50px;
+   }
+   .revitalize h1, .instruction{
+    text-align: center;
+   }
+   .revitalize-items{
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+   }
+   .revitalize-items > div{
+    position: relative;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.856);
+    border: 2px solid rgba(230, 83, 60, 0.815);
+    border-radius: 18px;
+   }
+   .revitalize-items > div > div{
+    position: absolute;
+   }
+   .revitalize-items > div > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    filter: brightness(0.7);
+   }
+
+   .confidence{
+    top: 120px;
+    left: 100px;
+}
+  .mental-health{
+    top: 120px;
+    left: 60px;
+   }
+  .energy, .sleep{
+    top: 100px;
+    left: 170px;
+   }
+   .confidence p, .mental-health p, .energy p, .sleep p{
+    color: rgba(230, 83, 60, 0.5);
+    font-size: 3.5rem;
+    font-weight: 900;
+  }
+  .confidence-description p, .mental-health-description p, .energy-description p, .sleep-description p{
+    filter: blur(10rem);
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  .confidence-description, .mental-health-description, .energy-description, .sleep-description{
+    margin: 20px;
+  }
+   .sleep-description, .confidence-description{
+    bottom: 5px;
+   }
+   .energy-description{
+    bottom: 30px;
+   }
+   .mental-health-description{
+    bottom: 10px;
+   }
+
+   .revitalize-items > div:hover{
+    background-color: rgba(230, 83, 60, 0.815);
+    transform:scale(0.8) rotate(360deg);
+    transition: all 0.5s ease-out 10ms;
+   }
+   
+   .sleep-description p:hover{
+    filter: blur(0rem);
+    transition: all 1.5s ease-out 10ms;
+   }
+   .energy-description p:hover{
+    filter: blur(0rem);
+    transition: all 1.5s ease-out 10ms;
+   }
+   .mental-health-description p:hover{
+    filter: blur(0rem);
+    transition: all 1.5s ease-out 10ms;
+   }
+   .confidence-description p:hover{
+    filter: blur(0rem);
+    transition: all 1.5s ease-out 10ms;
+   }
+  
+   
+   
 
 
 
@@ -572,7 +689,8 @@ body{
    
     .run-extra-mile,
     .bmi,
-    .trainer-team
+    .trainer-team,
+    .revitalize
     {
         margin: 20px;
     }
@@ -586,6 +704,7 @@ body{
     /* BMI Calculator */
 
     .bmi{
+        margin-top: 50px;
         max-width: none;
     }
     .bmi h4{
@@ -617,5 +736,28 @@ body{
  
     .get-started{
         margin-top: 30px;
+    }
+
+    /* revitalize with regular exercise  */
+    .revitalize{
+        margin-top: 50px;
+    }
+    .revitalize-items{
+       grid-template-columns: 1fr;
+    }
+    .revitalize h1, .sleep p, .energy p, .mental-health p, .confidence p{
+        font-size: 2rem;
+    }
+    .confidence, .mental-health, .energy, .sleep{
+        top: 100px;
+    }
+    .mental-health{
+        left: 70px;
+    }
+    .energy, .sleep{
+        left: 130px;
+    }
+    .energy-description p, .sleep-description p, .mental-health-description p, .confidence-description p{
+        font-size: 1.5rem;
     }
 }
