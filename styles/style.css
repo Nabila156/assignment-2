@@ -47,7 +47,8 @@ body{
 }
 
 #mobile-join,
-#run1
+#run1,
+#play-button
 {
     display: none;
 }
@@ -185,6 +186,11 @@ body{
     width: 35px;
     height: 35px;
     border-radius: 50%;
+}
+#play-button{
+    position: absolute;
+    left: 28px;
+    top: 31px;
 }
 #three{
     font-size: 1.5rem;
@@ -348,6 +354,7 @@ width: 100%;
 height: 100%;
 border-radius: 10px;
 filter: brightness(0.7);
+mix-blend-mode: multiply;
 }
 
 .confidence{
@@ -701,7 +708,8 @@ transition: all 1.5s ease-out 10ms;
      } 
     .fa-bars,
     #mobile-join,
-    #run1
+    #run1,
+    #play-button
     {
         display: block;
     }
@@ -727,10 +735,6 @@ transition: all 1.5s ease-out 10ms;
     {
         max-width: 170px;
         padding: 16px 10px;
-    }
-    #icon{
-        width: 25px;
-        height: 25px;
     }
     #three{
         font-size: 1.1rem;
